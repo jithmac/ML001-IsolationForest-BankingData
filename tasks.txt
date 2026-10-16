@@ -1,0 +1,7 @@
+Your task
+Explore. Pivot to wide format (one column per item) per bank and plot each series. Note that the anomalies are level shifts you can’t easily spot in raw balances.
+Feature engineering. For each bank and item, compute month-over-month % change (pct_change). Also try a 3-month rolling mean, a rolling std, and a month-of-year feature. Ask yourself why % change works better than raw differences here.
+Fit one Isolation Forest per bank on its own features (n_estimators=200, contamination around 0.02–0.05, random_state=42). Use decision_function to get anomaly scores, not just the -1/1 labels.
+Baseline. Implement the fixed rule (flag if |change| > 10 bn) and see what it does to Bank_A vs Bank_C.
+Flag the top 5% lowest scores per bank and list the month, item and % change.
+Evaluate. Compare against answer_key.csv. Count how many of the 9 you caught, how many false alarms you got, and compare to the fixed rule.

@@ -1,0 +1,10 @@
+bank,item,month,what
+Bank_A,Deposits,2021-03-31,sudden deposit surge
+Bank_A,Borrowings,2022-07-31,large borrowing
+Bank_A,Loans,2023-04-30,loan book drop
+Bank_B,Total_Assets,2020-04-30,pandemic-style jump
+Bank_B,Deposits,2022-10-31,deposit outflow
+Bank_B,Borrowings,2024-02-29,debt repayment
+Bank_C,Loans,2021-09-30,loan spike
+Bank_C,Deposits,2023-11-30,deposit run
+Bank_C,Borrowings,2020-06-30,emergency borrowing
